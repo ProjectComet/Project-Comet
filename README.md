@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to the API Connect Proof of Technology
 
-You can use the [editor on GitHub](https://github.com/melsapicdemo/apic/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+You can use this space to put custom content and layouts for technical assets.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
