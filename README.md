@@ -1,4 +1,4 @@
-## Welcome to an IBM API Connect Proof of Technology
+## Welcome to an IBM Hybrid Cloud Proof of Technology
 
 You can use this space to put custom content and layouts for technical assets.
 
