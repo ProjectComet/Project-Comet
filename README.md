@@ -14,7 +14,7 @@ To create a reusable industry specific demo for clients that contains multiple p
 Our solution highlights the architectural shifts from SOA to microservices to show that we understand both and how they can co-exist.  Our goal was for this to accelerate IBM’s success in Cloud and to target developer communities.
 
 ## Solution Architecture:
-![Image](file:///Users/melaniedauber/Desktop/Project%20Comet%20Solution%20Architecture.png)
+![Image](https://github.com/melsapicdemo/Project-Comet/blob/master/Project%20Comet%20Solution%20Architecture.png)
 
 ## Technical Skills Learned:
 -	Node.js
