@@ -31,9 +31,9 @@ Our solution highlights the architectural shifts from SOA to microservices to sh
 
 ## Business Value Added:
 -	API Connect
-  - Flexibility of a microservices architecture
-  - Independent development
-  - Omni-channel
+    - Flexibility of a microservices architecture
+    - Independent development
+    - Omni-channel
 - ODM
   - Mutability
   - Centralized repository
