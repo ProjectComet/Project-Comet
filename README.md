@@ -14,35 +14,35 @@ to create a reusable industry specific demo for clients that contains multiple p
 Our solution highlights the architectural shifts from SOA to microservices to show that we understand both and how they can co-exist.  Our goal was for this to accelerate IBM’s success in Cloud and to target developer communities.
 
 ## Technical Skills Learned:
-•	Node.js
-•	Cloud Foundry
-•	Docker
-•	SOA & Microservices architectures
-•	IBM Cloud 
-•	DevOps continuous toolchain: Eclipse IDE, Git, Deployment Visibility
-•	UrbanCode
-•	API Connect
-•	ODM
-•	TypeScript
-•	CloudantDB/JSON
-•	Debugging
-•	HTTP & REST APIs
-•	IBM Design Thinking 
+-	Node.js
+-	Cloud Foundry
+-	Docker
+-	SOA & Microservices architectures
+-	IBM Cloud 
+-	DevOps continuous toolchain: Eclipse IDE, Git, Deployment Visibility
+-	UrbanCode
+-	API Connect
+-	ODM
+-	TypeScript
+-	CloudantDB/JSON
+-	Debugging
+-	HTTP & REST APIs
+-	IBM Design Thinking 
 
 ## Business Value Added:
-•	API Connect
-o	Flexibility of a microservices architecture
-o	Independent development
-o	Omni-channel
-•	ODM
-o	Mutability
-o	Centralized repository
-•	DevOps
-o	Rapid development
-o	Increased productivity
+-	API Connect
+  - Flexibility of a microservices architecture
+  - Independent development
+  - Omni-channel
+- ODM
+  - Mutability
+  - Centralized repository
+- DevOps
+  - Rapid development
+  - Increased productivity
 
 ## Future Plans:
-•	Cloud Private
-•	Watson 
-•	Analytics
-•	Eventing 
+-	Cloud Private
+-	Watson 
+-	Analytics
+-	Eventing 
