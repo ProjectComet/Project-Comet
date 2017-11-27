@@ -9,7 +9,7 @@ The point in time that a person (or entity) is requesting a quote for insurance 
 3. Is there a severe weather event that is occurring or about to occur in that geographic location?
 
 ## Our Solution: 
-to create a reusable industry specific demo for clients that contains multiple products in the Hybrid Cloud Portfolio: API Connect, ODM, Weather Services, Cloudant DB, IBM Cloud & DevOps.  We wanted to put these products in their sweet spots! The solution architecture is both on-prem/off-prem.  We created Cloud Foundry applications written in Node.js and have three running on IBM Cloud and one running in a Docker container. 
+To create a reusable industry specific demo for clients that contains multiple products in the Hybrid Cloud Portfolio: API Connect, ODM, Weather Services, Cloudant DB, IBM Cloud & DevOps.  We wanted to put these products in their sweet spots! The solution architecture is both on-prem/off-prem.  We created Cloud Foundry applications written in Node.js and have three running on IBM Cloud and one running in a Docker container. 
 
 Our solution highlights the architectural shifts from SOA to microservices to show that we understand both and how they can co-exist.  Our goal was for this to accelerate IBM’s success in Cloud and to target developer communities.
 
