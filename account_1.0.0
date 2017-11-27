@@ -1,4 +1,4 @@
-'swagger: "2.0"
+`swagger: "2.0"
 info:
   x-ibm-name: "account"
   title: "Account"
@@ -162,4 +162,4 @@ definitions:
       guid:
         type: "string"
     additionalProperties: false
-tags: []'
+tags: []`
