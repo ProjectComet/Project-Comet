@@ -1,37 +1,47 @@
-## Welcome to an IBM Hybrid Cloud Proof of Technology
+## Welcome to Project Comet
+The purpose of Project Comet was to develop a reusable technical asset to demonstrate how an insurance company can leverage the IBM Hybrid Cloud Portfolio in a heterogeneous and hybrid environment while also highlighting the architectural shifts from SOA to microservices.
 
-You can use this space to put custom content and layouts for technical assets.
+## Business Problem:
+The point in time that a person (or entity) is requesting a quote for insurance the insurance company has some predictable questions that they are asking themselves:
+1 - Mutable, the rules I have in place today may not be the rules I want in place tomorrow, I need a flexible solution so I can rapidly deploy new rules quickly. 
+2 - How do I reduce the time between a business decision of changing/adding/deleting a current rule to the point in time that is running in production? What would be the impact if you couldn’t?
+3 - Is there a severe weather event that is occurring or about to occur in that geographic location?
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Our Solution: 
+to create a reusable industry specific demo for clients that contains multiple products in the Hybrid Cloud Portfolio: API Connect, ODM, Weather Services, Cloudant DB, IBM Cloud & DevOps.  We wanted to put these products in their sweet spots! The solution architecture is both on-prem/off-prem.  We created Cloud Foundry applications written in Node.js and have three running on IBM Cloud and one running in a Docker container. 
 
-### Markdown
+Our solution highlights the architectural shifts from SOA to microservices to show that we understand both and how they can co-exist.  Our goal was for this to accelerate IBM’s success in Cloud and to target developer communities.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Technical Skills Learned:
+•	Node.js
+•	Cloud Foundry
+•	Docker
+•	SOA & Microservices architectures
+•	IBM Cloud 
+•	DevOps continuous toolchain: Eclipse IDE, Git, Deployment Visibility
+•	UrbanCode
+•	API Connect
+•	ODM
+•	TypeScript
+•	CloudantDB/JSON
+•	Debugging
+•	HTTP & REST APIs
+•	IBM Design Thinking 
 
-```markdown
-Syntax highlighted code block
+## Business Value Added:
+•	API Connect
+o	Flexibility of a microservices architecture
+o	Independent development
+o	Omni-channel
+•	ODM
+o	Mutability
+o	Centralized repository
+•	DevOps
+o	Rapid development
+o	Increased productivity
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/melsapicdemo/apic/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Future Plans:
+•	Cloud Private
+•	Watson 
+•	Analytics
+•	Eventing 
