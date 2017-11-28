@@ -1,0 +1,122 @@
+---
+swagger: "2.0"
+info:
+  x-ibm-name: "vehicle"
+  title: "Vehicle"
+  version: "1.0.0"
+schemes:
+- "https"
+host: "$(catalog.host)"
+basePath: "/vehicle"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+securityDefinitions:
+  clientIdHeader:
+    type: "apiKey"
+    in: "header"
+    name: "X-IBM-Client-Id"
+security:
+- clientIdHeader: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  assembly:
+    execute:
+    - invoke:
+        target-url: "https://comet-vehicle.mybluemix.net$(request.path)"
+        verb: "keep"
+  phase: "realized"
+paths:
+  /id/{id}:
+    get:
+      responses:
+        200:
+          description: "200 OK"
+          schema:
+            $ref: "#/definitions/vehicle"
+    put:
+      responses:
+        200:
+          description: "200 OK"
+          schema:
+            $ref: "#/definitions/vehicle"
+      parameters:
+      - name: "vehicle"
+        required: false
+        in: "body"
+        schema:
+          $ref: "#/definitions/vehicle"
+    delete:
+      responses:
+        200:
+          description: "200 OK"
+  /guid:
+    get:
+      responses:
+        200:
+          description: "200 OK"
+  /list:
+    get:
+      responses:
+        200:
+          description: "200 OK"
+          schema:
+            $ref: "#/definitions/vehicles"
+  /:
+    post:
+      responses:
+        200:
+          description: "200 OK"
+      parameters:
+      - name: "vehicle"
+        required: false
+        in: "body"
+        schema:
+          $ref: "#/definitions/vehicle"
+definitions:
+  vehicle:
+    properties:
+      airbagType:
+        type: "string"
+      hasABS:
+        properties: {}
+        type: "boolean"
+      dayTimeLights:
+        properties: {}
+        type: "boolean"
+      make:
+        properties: {}
+        type: "string"
+      model:
+        properties: {}
+        type: "string"
+      vin:
+        properties: {}
+        type: "string"
+      vehicleType:
+        properties: {}
+        type: "string"
+      year:
+        properties: {}
+        type: "string"
+      value:
+        properties: {}
+        type: "string"
+    additionalProperties: true
+  vehicles:
+    properties:
+      vehicle:
+        type: "array"
+        items:
+          $ref: "#/definitions/vehicle"
+    additionalProperties: false
+  guid:
+    properties:
+      guid:
+        type: "string"
+    additionalProperties: false
+tags: []
