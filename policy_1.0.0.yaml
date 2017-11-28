@@ -1,0 +1,116 @@
+---
+swagger: "2.0"
+info:
+  x-ibm-name: "policy"
+  title: "Policy"
+  version: "1.0.0"
+schemes:
+- "https"
+host: "$(catalog.host)"
+basePath: "/policy"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+securityDefinitions:
+  clientIdHeader:
+    type: "apiKey"
+    in: "header"
+    name: "X-IBM-Client-Id"
+security:
+- clientIdHeader: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  assembly:
+    execute:
+    - invoke:
+        target-url: "https://comet-coverage.mybluemix.net$(request.path)"
+        verb: "keep"
+  phase: "realized"
+paths:
+  /list:
+    get:
+      responses:
+        200:
+          description: "200 OK"
+          schema:
+            $ref: "#/definitions/policies"
+  /:
+    post:
+      responses:
+        200:
+          description: "200 OK"
+          schema:
+            $ref: "#/definitions/policy"
+      parameters:
+      - name: "policy"
+        required: false
+        in: "body"
+        schema:
+          $ref: "#/definitions/policy"
+  /id/{id}:
+    get:
+      responses:
+        200:
+          description: "200 OK"
+          schema:
+            $ref: "#/definitions/policy"
+    parameters:
+    - name: "id"
+      type: "string"
+      required: true
+      in: "path"
+    delete:
+      responses:
+        200:
+          description: "200 OK"
+    put:
+      responses:
+        200:
+          description: "200 OK"
+          schema:
+            $ref: "#/definitions/policy"
+      parameters:
+      - name: "policy"
+        required: false
+        in: "body"
+        schema:
+          $ref: "#/definitions/policy"
+  /guid:
+    get:
+      responses:
+        200:
+          description: "200 OK"
+          schema:
+            $ref: "#/definitions/guid"
+definitions:
+  policy:
+    properties:
+      personalLiability:
+        type: "integer"
+        format: "int32"
+      collision:
+        properties: {}
+        type: "integer"
+        format: "int32"
+      comprehensive:
+        properties: {}
+        type: "integer"
+        format: "int32"
+    additionalProperties: true
+  policies:
+    properties:
+      policy:
+        type: "array"
+        items:
+          $ref: "#/definitions/policy"
+    additionalProperties: false
+  guid:
+    properties:
+      guid:
+        type: "string"
+    additionalProperties: false
+tags: []
